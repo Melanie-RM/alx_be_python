@@ -1,7 +1,7 @@
 # simple interest calculation 
-p = 1000  # principal amount
-r = 5     # annual interest rate in percent
-t = 3     # time in years
+principal = 1000  # principal amount
+rate = 0.05     # annual interest rate in percent
+time = 3     # time in years
 
-I = (p * r * t) / 100  # simple interest formula
+I = (principal * rate * time)   # simple interest formula
 print("The simple interest is:", I)
