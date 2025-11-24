@@ -1,4 +1,3 @@
-
 def perform_operations():
     num1 = float(input("enter a number"))
     num2 = float(input("enter a second number"))
@@ -6,24 +5,35 @@ def perform_operations():
     answer = 0
 
     
-    elif operation == "devide" :
+    if operation == "devide" :
         if num1>= num2:
             answer = num1 / num2
-    elif num1 == 0 or num2 == 0:
-        answer = "Cannot devide by zero"
-    elif num1 > 0 or num2 > 0: 
-        answer = num2 / num1 
+            #print(answer)
+        elif num1 > 0 or num2 > 0:
+            answer = num2 / num1
+            
+        elif num1 == 0 or num2 == 0:
+            answer = "Cannot devide by zero"
+        #print(answer)
+        else:
+            answer = num2/num1
+        #print(answer)
 
     elif operation == "add":
         answer = num1 + num2
+        #print(answer)
     
     elif operation == "multiply" :
         answer = num1 * num2
+        #print(answer)
 
     elif operation == "subtract":
         if num1 > num2:
             answer = num1 - num2
+            #print(answer)
         else :
             answer = num2 - num1
-    return answer
+            #print(answer)
+    print( answer)
 perform_operations()
+    
