@@ -6,10 +6,10 @@ class TestSimpleCalculator(unittest.Test.Case):
     self.calc = SimpleCalculator()
 
 #addition tests
-    def test_add_positive_numbers(self):
+    def test_addition_positive_numbers(self):
         self.assertEqual(self.calc.add(5,3),8)
     
-    def test_add_negative_numbers(self):
+    def test_addition_negative_numbers(self):
          self.assertEqual(self.calc.add(-2,-4),-6)
 
     #subtraction tests
