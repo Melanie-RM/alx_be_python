@@ -28,13 +28,13 @@ class TestSimpleCalculator(unittest.Test.Case):
     
     #division tests
     def test_division(self):
-          self.assertEqual(self.calc.devide(20,5),4)
+          self.assertEqual(self.calc.divide(20,5),4)
     
-    def test_devide_floats(self):
-          self.assertEqual(self.calc.devide(7,2),3.5)
+    def test_divide_floats(self):
+          self.assertEqual(self.calc.divide(7,2),3.5)
     
     def test_divide_by_zero(self):
-          self.assertEqual(self.calc.devide(10,0))
+          self.assertEqual(self.calc.divide(10,0))
 
 if __name__=="__main__":
      unittest.main()
